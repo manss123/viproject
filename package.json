@@ -7,13 +7,30 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/vue-fontawesome": "^3.0.2",
+    "@quasar/extras": "^1.0.0",
     "core-js": "^3.8.3",
+    "firebase": "^9.15.0",
+    "quasar": "^2.0.0",
+    "unity-webgl": "^3.5.0",
     "vue": "^3.2.13",
-    "vue-router": "^4.0.3"
+    "vue-router": "^4.0.3",
+    "vue3-google-login": "^2.0.12",
+    "vue3-google-signin": "^1.2.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "sass": "1.32.12",
+    "sass-loader": "^12.0.0",
+    "vue-cli-plugin-quasar": "~5.0.1",
+    "vue-loader": "^17.2.2",
+    "vue-template-compiler": "^2.7.14",
+    "vue3-google-oauth2": "^1.0.6"
   }
 }
