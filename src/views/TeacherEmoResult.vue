@@ -82,16 +82,16 @@
                             <div class="text text-h6" v-if="avgPreDepress && avgPreDepress >= 0 && avgPreDepress <= 9">
                                 ปกติ
                             </div>
-                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress >= 10 && avgPreDepress <= 13">
+                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress > 9 && avgPreDepress <= 13">
                                 เล็กน้อย
                             </div>
-                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress >= 14 && avgPreDepress <= 20">
+                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress > 13 && avgPreDepress <= 20">
                                 ปานกลาง
                             </div>
-                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress >= 21 && avgPreDepress <= 27">
+                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress > 21 && avgPreDepress <= 27">
                                 รุนแรง
                             </div>
-                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress >= 28">
+                            <div class="text text-h6" v-if="avgPreDepress && avgPreDepress > 27">
                                 รุนแรงมาก
                             </div>
                         </q-card-section>
@@ -112,16 +112,16 @@
                             <div class="text text-h6" v-if="avgPostDepress && avgPostDepress >= 0 && avgPostDepress <= 9">
                                 ปกติ
                             </div>
-                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress >= 10 && avgPostDepress <= 13">
+                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress > 9 && avgPostDepress <= 13">
                                 เล็กน้อย
                             </div>
-                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress >= 14 && avgPostDepress <= 20">
+                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress > 14 && avgPostDepress <= 20">
                                 ปานกลาง
                             </div>
-                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress >= 21 && avgPostDepress <= 27">
+                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress > 20 && avgPostDepress <= 27">
                                 รุนแรง
                             </div>
-                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress >= 28">
+                            <div class="text text-h6" v-if="avgPostDepress && avgPostDepress > 27">
                                 รุนแรงมาก
                             </div>
                         </q-card-section>
@@ -150,16 +150,16 @@
                             <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety >= 0 && avgPreAnxiety <= 9">
                                 ปกติ
                             </div>
-                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety >= 10 && avgPreAnxiety <= 13">
+                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety > 9 && avgPreAnxiety <= 13">
                                 เล็กน้อย
                             </div>
-                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety >= 14 && avgPreAnxiety <= 20">
+                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety > 13 && avgPreAnxiety <= 20">
                                 ปานกลาง
                             </div>
-                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety >= 21 && avgPreAnxiety <= 27">
+                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety > 21 && avgPreAnxiety <= 27">
                                 รุนแรง
                             </div>
-                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety >= 28">
+                            <div class="text text-h6" v-if="avgPreAnxiety && avgPreAnxiety > 28">
                                 รุนแรงมาก
                             </div>
                         </q-card-section>
@@ -180,16 +180,16 @@
                             <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety >= 0 && avgPostAnxiety <= 9">
                                 ปกติ
                             </div>
-                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety >= 10 && avgPostAnxiety <= 13">
+                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety > 9 && avgPostAnxiety <= 13">
                                 เล็กน้อย
                             </div>
-                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety >= 14 && avgPostAnxiety <= 20">
+                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety > 13 && avgPostAnxiety <= 20">
                                 ปานกลาง
                             </div>
-                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety >= 21 && avgPostAnxiety <= 27">
+                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety > 20 && avgPostAnxiety <= 27">
                                 รุนแรง
                             </div>
-                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety >= 28">
+                            <div class="text text-h6" v-if="avgPostAnxiety && avgPostAnxiety > 27">
                                 รุนแรงมาก
                             </div>
                         </q-card-section>
@@ -218,16 +218,16 @@
                             <div class="text text-h6" v-if="avgPreStress && avgPreStress >= 0 && avgPreStress <= 9">
                                 ปกติ
                             </div>
-                            <div class="text text-h6" v-if="avgPreStress && avgPreStress >= 10 && avgPreStress <= 13">
+                            <div class="text text-h6" v-if="avgPreStress && avgPreStress > 9 && avgPreStress <= 13">
                                 เล็กน้อย
                             </div>
-                            <div class="text text-h6" v-if="avgPreStress && avgPreStress >= 14 && avgPreStress <= 20">
+                            <div class="text text-h6" v-if="avgPreStress && avgPreStress > 13 && avgPreStress <= 20">
                                 ปานกลาง
                             </div>
-                            <div class="text text-h6" v-if="avgPreStress && avgPreStress >= 21 && avgPreStress <= 27">
+                            <div class="text text-h6" v-if="avgPreStress && avgPreStress > 20 && avgPreStress <= 27">
                                 รุนแรง
                             </div>
-                            <div class="text text-h6" v-if="avgPreStress && avgPreStress >= 28">
+                            <div class="text text-h6" v-if="avgPreStress && avgPreStress > 27">
                                 รุนแรงมาก
                             </div>
                         </q-card-section>
@@ -248,16 +248,16 @@
                             <div class="text text-h6" v-if="avgPostStress && avgPostStress >= 0 && avgPostStress <= 9">
                                 ปกติ
                             </div>
-                            <div class="text text-h6" v-if="avgPostStress && avgPostStress >= 10 && avgPostStress <= 13">
+                            <div class="text text-h6" v-if="avgPostStress && avgPostStress > 9 && avgPostStress <= 13">
                                 เล็กน้อย
                             </div>
-                            <div class="text text-h6" v-if="avgPostStress && avgPostStress >= 14 && avgPostStress <= 20">
+                            <div class="text text-h6" v-if="avgPostStress && avgPostStress > 13 && avgPostStress <= 20">
                                 ปานกลาง
                             </div>
-                            <div class="text text-h6" v-if="avgPostStress && avgPostStress >= 21 && avgPostStress <= 27">
+                            <div class="text text-h6" v-if="avgPostStress && avgPostStress > 20 && avgPostStress <= 27">
                                 รุนแรง
                             </div>
-                            <div class="text text-h6" v-if="avgPostStress && avgPostStress >= 28">
+                            <div class="text text-h6" v-if="avgPostStress && avgPostStress > 27">
                                 รุนแรงมาก
                             </div>
                         </q-card-section>
@@ -301,9 +301,33 @@ export default {
             
             let avgPreAnxietyt = 0, avgPreDepresst = 0, avgPreStresst = 0
             emotionalData.forEach(indexData => {
-                avgPreAnxietyt += indexData.AnxietyScore
-                avgPreDepresst += indexData.DepressionScore
-                avgPreStresst += indexData.StressScore
+                
+                if(indexData.AnxietyScore)
+                {
+                    avgPreAnxietyt += indexData.AnxietyScore
+                }
+                else
+                {
+                    avgPreAnxietyt += 0;
+                }
+
+                if(indexData.DepressionScore)
+                {
+                    avgPreDepresst += indexData.DepressionScore
+                }
+                else
+                {
+                    avgPreDepresst += 0;
+                }
+
+                if(indexData.StressScore)
+                {
+                    avgPreStresst += indexData.StressScore
+                }
+                else
+                {
+                    avgPreStresst += 0;
+                }
             })
             avgPreAnxietyt /= emotionalData.length
             avgPreDepresst /= emotionalData.length
