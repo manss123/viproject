@@ -1,7 +1,7 @@
 import { async } from "@firebase/util"
 import { ref } from "vue"
 import { auth, db } from '../firebase/config'
-import { signInWithRedirect, getAuth, signOut, GoogleAuthProvider, onAuthStateChanged, getRedirectResult } from 'firebase/auth'
+import { signInWithPopup, getAuth, signOut, GoogleAuthProvider, onAuthStateChanged, getRedirectResult } from 'firebase/auth'
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore'
 import { useRouter } from "vue-router"
 
@@ -12,7 +12,7 @@ const AuthenComposable = () => {
     const provider = new GoogleAuthProvider();
     const signInWithGoogle = async () => {
         try {
-            const result = await signInWithRedirect(auth, provider)
+            const result = await signInWithPopup(auth, provider)
             currentUser.value = result.user
 
             await new Promise((resolve) => {
